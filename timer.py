@@ -48,7 +48,7 @@ def timer(number: int = 10) -> Func:
                     times: list[float] = []
                     for _ in range(number):
                         start = time()
-                        func(*args, **kwargs)
+                        rslt = func(*args, **kwargs)
                         dur = time() - start
                         times += (dur,)
                 print(f'> {func.__name__} {number} runs:  '
@@ -58,8 +58,9 @@ def timer(number: int = 10) -> Func:
                 func(*args, **kwargs)
             else:
                 start = time()
-                func(*args, **kwargs)
+                rslt = func(*args, **kwargs)
                 print(f'> {func.__name__} ran in '
                       f'{time() - start:0.3e} seconds.')
+            return rslt
         return _time_it
     return _decorator

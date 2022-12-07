@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Day 5, part 1.
+"""Day 6, part 1.
 """
 
 from typing import Generator

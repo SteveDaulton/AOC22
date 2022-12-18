@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Day 13, part 1.
+"""Day 14, part 1.
 
 Running the test input with ANIMATION = True is quite fun, but far
 too slow for the puzzle input.
